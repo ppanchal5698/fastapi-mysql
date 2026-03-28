@@ -6,6 +6,10 @@ dist/
 wheels/
 *.egg-info
 
+# Local / production secrets (never commit)
+.env.local
+.env.prod
+
 # Virtual environments
 .venv
 
