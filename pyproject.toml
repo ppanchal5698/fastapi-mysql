@@ -1,0 +1,29 @@
+[project]
+name = "fastapi-mysql-demo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiomysql>=0.3.2",
+    "fastapi[standard]>=0.135.2",
+    "loguru>=0.7.3",
+    "pydantic-settings>=2.13.1",
+    "pyjwt>=2.10.1",
+    "redis>=7.4.0",
+    "slowapi>=0.1.9",
+    "sqlalchemy>=2.0.48",
+]
+
+[tool.basedpyright]
+venvPath = "."
+venv = ".venv"
+pythonVersion = "3.12"
+stubPath = "typings"
+
+# Backwards compatibility for Microsoft Pyright / other tools
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+pythonVersion = "3.12"
+stubPath = "typings"
